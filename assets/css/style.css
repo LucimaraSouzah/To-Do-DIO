@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.entrada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entrada input {
+  font-size: 1rem;
+  padding: 5px;
+  margin: 10px 5px 10px 0px;
+  border-radius: 4px;
+  border: 1px solid rgb(105, 197, 255);
+}
+
+.entrada input:focus {
+  border: 1px solid rgb(3, 158, 255) !important;
+  outline: none !important;
+}
+
+.entrada button {
+  width: 100px;
+  height: 38px;
+  margin: 10px 0px 10px 5px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: rgb(227, 248, 255);
+  border: 1px solid rgb(105, 197, 255);
+  color: rgb(105, 197, 255);
+  cursor: pointer;
+}
+.entrada button:hover {
+  background-color: rgb(38, 201, 255);
+  border: 1px solid rgb(105, 197, 255);
+  color: rgb(255, 255, 255);
+}
+
+#saida {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(105, 197, 255);
+  border-radius: 5px;
+  width: 324px;
+  min-height: 50px;
+}
+
+.list-item {
+  width: 310px;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.list-item:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+.list-item input {
+  cursor: pointer;
+}
+.list-item span {
+  width: 250px;
+}
+:checked + label {
+  color: rgb(158, 158, 158);
+  text-decoration: line-through;
+}
+
+.list-item .close {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: rgb(248, 201, 201);
+  border: 1px solid rgb(248, 47, 47);
+  color: rgb(248, 47, 47);
+  cursor: pointer;
+}
+
+.list-item .close:hover {
+  background-color: rgb(248, 47, 47);
+  border: 1px solid rgb(248, 201, 201);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .entrada {
+    width: 300px;
+  }
+  .entrada input {
+    width: 190px;
+  }
+  .entrada input::placeholder {
+    font-size: 12px;
+  }
+  #saida {
+    width: 300px;
+  }
+
+  .list-item {
+    width: 280px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container h1 {
+    font-size: 2.8rem;
+  }
+
+  .entrada {
+    width: 250px;
+  }
+  .entrada input {
+    width: 150px;
+  }
+  .entrada input::placeholder {
+    font-size: 12px;
+  }
+  #saida {
+    width: 250px;
+  }
+
+  .list-item {
+    width: 240px;
+  }
+}
